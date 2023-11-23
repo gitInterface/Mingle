@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="zh-Hant-TW">
+    <title>Mingle 打工換宿平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar">
+            <nav class="navbar bg-primary navbar-expand-lg navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/icon-main.png" alt="Icon" style="width: 30px; height: 27px;">
+                    </div>
+                    <h1 class="m-0 test-pink">Mingle 名狗</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">首頁</a>
+                        <a href="404.html" class="nav-item nav-link">關於Mingle</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">打工機會</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="404.html" class="dropdown-item">所有項目</a>
+                                <a href="404.html" class="dropdown-item">依地區篩選</a>
+                                <a href="404.html" class="dropdown-item">依類型篩選</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">換宿資訊</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="404.html" class="dropdown-item">業者據點</a>
+                                <a href="404.html" class="dropdown-item">推薦日誌</a>
+                            </div>
+                        </div>
+                        <a href="404.html" class="nav-item nav-link">聯絡我們</a>
+                        <a href="404.html" class="nav-item nav-link">成為提供者</a>
+                    </div>
+                    <a href="404.html" class="btn btn-primary px-3 d-lg-flex">成為幫助者</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">一點 <span class="text-info ">幫助</span>
+                        ，一晚<span class="text-info "> 住宿。</span>
+                    </h1>
+                    <p class="animated fadeIn mb-4 pb-2">全台 26 縣市提供打工換宿</p>
+                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">如何運作</a>
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="用關鍵字查詢">
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>換宿地區</option>
+                                    <option value="1">東區</option>
+                                    <option value="2">北區</option>
+                                    <option value="3">西區</option>
+                                    <option value="4">南區</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>打工類型</option>
+                                    <option value="1">類型1</option>
+                                    <option value="2">類型2</option>
+                                    <option value="3">類型3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100 py-3">開始搜尋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-人力.png" alt="Icon">
+                                </div>
+                                <h6>人力</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-旅店.png" alt="Icon">
+                                </div>
+                                <h6>旅店</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-補教.png" alt="Icon">
+                                </div>
+                                <h6>補教</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-銷售.png" alt="Icon">
+                                </div>
+                                <h6>銷售</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-餐飲.png" alt="Icon">
+                                </div>
+                                <h6>餐飲</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-辦公.png" alt="Icon">
+                                </div>
+                                <h6>辦公</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-活動.png" alt="Icon">
+                                </div>
+                                <h6>活動</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-其他.png" alt="Icon">
+                                </div>
+                                <h6>其他</h6>
+                                <span>123 個打工機會</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+        <!-- List Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 class="mb-3">打工機會</h1>
+                            <p>快來查看正在徵求幫助者的項目！</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">熱門項目</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">最新開放</a>
+                            </li>
+                            <li class="nav-item me-0">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">即將截止</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/宜蘭小木屋建設.jpg" alt=""></a>
+                                        <div
+                                            class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                            人力</div>
+                                        <div
+                                            class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                            東區</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">宜蘭小木屋建設</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>宜蘭縣頭城鎮青雲路一段310巷222號</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-calendar text-primary me-2"></i>至少 3 週</small>
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-user text-primary me-2"></i>剩餘 1 名</small>
+                                        <small class="flex-fill text-center py-2"><i
+                                                class="fa fa-star text-primary me-2"></i>4.9 顆星</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/新北浩克漢堡.jpg" alt=""></a>
+                                        <div
+                                            class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                            餐飲</div>
+                                        <div
+                                            class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                            北區</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">新北浩克漢堡</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>新北市汐止區仁愛路157號</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-calendar text-primary me-2"></i>至少 3 週</small>
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-user text-primary me-2"></i>剩餘 1 名</small>
+                                        <small class="flex-fill text-center py-2"><i
+                                                class="fa fa-star text-primary me-2"></i>4.9 顆星</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/台東貨櫃屋.jpg" alt=""></a>
+                                        <div
+                                            class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                            旅店</div>
+                                        <div
+                                            class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                            東區</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">台東貨櫃屋</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>臺東縣臺東市新生路105號</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-calendar text-primary me-2"></i>至少 3 週</small>
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-user text-primary me-2"></i>剩餘 1 名</small>
+                                        <small class="flex-fill text-center py-2"><i
+                                                class="fa fa-star text-primary me-2"></i>4.9 顆星</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/花蓮農產市集.jpg" alt=""></a>
+                                        <div
+                                            class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                            銷售</div>
+                                        <div
+                                            class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                            東區</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">花蓮農產市集</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York,
+                                            USA</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-calendar text-primary me-2"></i>至少 3 週</small>
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-user text-primary me-2"></i>剩餘 1 名</small>
+                                        <small class="flex-fill text-center py-2"><i
+                                                class="fa fa-star text-primary me-2"></i>4.9 顆星</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/台中實習辦公.jpg" alt=""></a>
+                                        <div
+                                            class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                            辦公</div>
+                                        <div
+                                            class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                            西區</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">台中實習辦公</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York,
+                                            USA</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-calendar text-primary me-2"></i>至少 3 週</small>
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-user text-primary me-2"></i>剩餘 1 名</small>
+                                        <small class="flex-fill text-center py-2"><i
+                                                class="fa fa-star text-primary me-2"></i>4.9 顆星</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/台東熱氣球活動.jpg" alt=""></a>
+                                        <div
+                                            class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                            活動</div>
+                                        <div
+                                            class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                            東區</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">台東熱氣球活動</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York,
+                                            USA</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-calendar text-primary me-2"></i>至少 3 週</small>
+                                        <small class="flex-fill text-center border-end py-2"><i
+                                                class="fa fa-user text-primary me-2"></i>剩餘 1 名</small>
+                                        <small class="flex-fill text-center py-2"><i
+                                                class="fa fa-star text-primary me-2"></i>4.9 顆星</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="btn btn-primary py-3 px-5" href="">瀏覽更多打工機會 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- List End -->
+
+        <!-- Review Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">用戶心得</h1>
+                    <p>聽聽他們怎麼說</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quis sed asperiores
+                                nostrum at delectus illum error mollitia officia nam, voluptates doloremque molestiae
+                                dolorum earum ad assumenda beatae, debitis obcaecati.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/user-1.jpg"
+                                    style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">用戶A</h6>
+                                    <small>曾參與 宜蘭小木屋建設 打工換宿</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quis sed asperiores
+                                nostrum at delectus illum error mollitia officia nam, voluptates doloremque molestiae
+                                dolorum earum ad assumenda beatae, debitis obcaecati.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/user-1.jpg"
+                                    style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">用戶B</h6>
+                                    <small>曾參與 台東貨櫃屋 打工換宿</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quis sed asperiores
+                                nostrum at delectus illum error mollitia officia nam, voluptates doloremque molestiae
+                                dolorum earum ad assumenda beatae, debitis obcaecati.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/user-1.jpg"
+                                    style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">用戶C</h6>
+                                    <small>曾參與 花蓮農產市集 打工換宿</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">平台資訊</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>台北市大安區復興南路一段390號2樓</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>02 6631 6588</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Mingle.org@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">用戶規範</h5>
+                        <a class="btn btn-link text-white-50" href="">服務條款</a>
+                        <a class="btn btn-link text-white-50" href="">隱私政策</a>
+                        <a class="btn btn-link text-white-50" href="">使用者合約</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">活動相簿</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">訂閱電子報</h5>
+                        <p>成為Mingle的訂閱戶，<br>即時接收最新的消息！</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="請填入email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">送出</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Mingle</a>, All Right Reserved.
+                            Designed By <a class="border-bottom" href="https://www.ispan.com.tw/">Mingle
+                                Co.,Ltd. 名狗團隊</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">返回首頁</a>
+                                <a href="">Cookies</a>
+                                <a href="">聯絡我們</a>
+                                <a href="">常見 Q&A</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
