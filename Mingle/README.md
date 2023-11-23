@@ -1,2 +1,2 @@
-# Mingle
-GitHub Pages: https://lizard512.github.io/Mingle/
+# Mingle 打工換宿網站
+This is our 資策會 project
