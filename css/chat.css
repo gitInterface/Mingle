@@ -1,10 +1,10 @@
-.headline {
-    text-align: center;
-}
-
 .msg {}
 
 .pic {
     border-radius: 50%;
     float: left;
+}
+
+.txt {
+    overflow: hidden;
 }
