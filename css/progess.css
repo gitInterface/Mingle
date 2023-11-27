@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border-box：当定义width和height时，
+    border和padding的参数值被包含在width和height之内。*/
+    box-sizing: border-box;
+}
+
+:root {
+    /* 在: root选择器中定义自定义属性意味着它们可以作用于全局文档中所有元素。 */
+    --color--: #dededf;
+    --color_active--: #2396ef;
+    --font_color--: #535455;
+}
+
+body,
+html {
+    /* 给一个元素中设置overflow: hidden，
+    那么该元素的内容若超出了给定的宽度和高度属性，那么超出的部分将会被隐藏 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* 将弹性 <div>元素的所有项目的居中对齐： */
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.progress-container {
+    width: 100%;
+    width: 350px;
+    display: flex;
+    /* 均匀排列每个元素
+    首个元素放置于起点，末尾元素放置于终点 */
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.progress-container::before {
+    content: '';
+    width: 100%;
+    background-color: var(--color--);
+}
+
+.progress-container>.progress,
+.progress-container::before {
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    /* top: 50%——向上间隔50%的高度。由于自身的高度，单纯使用此属性并不会居中。 */
+    top: 50%;
+    /* transform: translateY(-50%)——向上移动自身高度的50%，与上个属性结合便可以实现垂直居中。 */
+    transform: translateY(-50%);
+    /* z-index 属性设置元素的堆叠顺序。
+    拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。 */
+    z-index: -1;
+}
+
+.progress-container>.progress {
+    background-color: var(--color_active--);
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.progress-container>.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: var(--color--);
+    width: 40px;
+    height: 40px;
+    color: var(--font_color--);
+    background-color: var(--default_color--);
+    transition: all .35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.progress-container>.circle.active {
+    border-color: var(--color_active--);
+}
+
+.prev,
+.next {
+    /* CSS outline: none; */
+    /* 表示使outline属性无效，使绘制于元素周围的一条线无效。 */
+    outline: none;
+    /* 标签元素不设置边框属性或者取消边框属性 */
+    /* 设置0浏览器依然会渲染，占用内存，设置none就不会渲染 */
+    border: none;
+    /* display: inline-block不设置宽度时，内容撑开宽度；
+    不会独占一行，支持宽高，代码换行被解析成空格 */
+    display: inline-block;
+    background-color: var(--color--);
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: var(--font_color--);
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+/* a.active 是对class=active的a标签生效 */
+/* a:active 是对按下的a标签生效 */
+.prev:active,
+.next:active {
+    transform: scale(.9);
+}
+
+.prev.disabled,
+.next.disabled {
+    cursor: not-allowed;
+    background-color: var(--color--);
+    color: var(--font_color--);
+}
+
+.prev.active,
+.next.active {
+    background-color: var(--color_active--);
+    color: var(--default_color--);
+}
+
+.next {
+    margin-left: 15px;
+}
