@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="zh-Hant-TW">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>房源發布</title>
     <link rel="stylesheet" href="./css/progess.css" />
+    <link rel="stylesheet" href="./css/postHouse.css" />
 </head>
+
 <body>
+
     <div class="container">
+        <!-- 頁面一 -->
+        <div class="node active">
+            <div id="section1" class="section active">
+                <!-- 標題 -->
+                <div class="header">
+                    <h1>下列哪項最符合工作內容？</h1>
+                </div>
+                <!-- 按鈕行一 -->
+                <div class="btn-row">
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-人力.png">
+                        <h2>人力</h2>
+                    </button>
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-旅店.png">
+                        <h2>旅店</h2>
+                    </button>
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-活動.png">
+                        <h2>活動</h2>
+                    </button>
+                </div>
+
+                <!-- 按鈕行二 -->
+                <div class="btn-row">
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-補教.png">
+                        <h2>補教</h2>
+                    </button>
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-辦公.png">
+                        <h2>辦公</h2>
+                    </button>
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-其他.png">
+                        <h2>其他</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 頁面二 -->
+        <div class="node">
+            <div id="section2" class="section">
+                <div class="header">
+                    <h1>下列哪項最能確切描述你的房源？</h1>
+                </div>
+                <!-- 按鈕行 -->
+                <div class="btn-row">
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-補教.png">
+                        <h2>補教</h2>
+                    </button>
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-辦公.png">
+                        <h2>辦公</h2>
+                    </button>
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-其他.png">
+                        <h2>其他</h2>
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="progress-container">
+
             <div id="progress" class="progress"></div>
-            <div class="node active"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
-            <div class="node"></div>
         </div>
         <button type="button" class="prev disabled" id="prev">上一步</button>
         <button type="button" class="next active" id="next">下一步</button>
     </div>
     <script src="./js/postHouse.js"></script>
 </body>
+
 </html>

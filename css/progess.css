@@ -1,44 +1,47 @@
 * {
     margin: 0;
     padding: 0;
-    /* border-box：当定义width和height时，
-    border和padding的参数值被包含在width和height之内。*/
+    /* border-box：當定義width和height時，
+    border和padding的參數值被包含在width和height之內。*/
     box-sizing: border-box;
 }
 
 :root {
-    /* 在: root选择器中定义自定义属性意味着它们可以作用于全局文档中所有元素。 */
+    /* 在: root選擇器中定義自定義屬性意味著它們可以作用於全局文檔中所有元素。 */
     --color--: #dededf;
-    --color_active--: #2396ef;
-    --font_color--: #535455;
+    --color_active--: #000000;
+    --font_color--: #ffffff;
+    --default_color--: #ffffff;
 }
 
 body,
 html {
-    /* 给一个元素中设置overflow: hidden，
-    那么该元素的内容若超出了给定的宽度和高度属性，那么超出的部分将会被隐藏 */
+    /* 給一個元素中設置overflow: hidden，
+    那麽該元素的內容若超出了給定的寬度和高度屬性，那麽超出的部分將會被隱藏 */
     overflow: hidden;
     display: flex;
     justify-content: center;
-    /* 将弹性 <div>元素的所有项目的居中对齐： */
+    /* 將彈性 <div>元素的所有項目的居中對齊： */
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .container {
+    height: 100%;
     width: 100%;
     text-align: center;
 }
 
 .progress-container {
     width: 100%;
-    width: 350px;
     display: flex;
-    /* 均匀排列每个元素
-    首个元素放置于起点，末尾元素放置于终点 */
+    /* 均勻排列每個元素
+    首個元素放置於起點，末尾元素放置於終點 */
     justify-content: space-between;
     position: relative;
-    margin-bottom: 30px;
+    margin-top: 30%;
+    margin-bottom: 10px;
 }
 
 .progress-container::before {
@@ -53,12 +56,12 @@ html {
     border-radius: 2px;
     position: absolute;
     left: 0;
-    /* top: 50%——向上间隔50%的高度。由于自身的高度，单纯使用此属性并不会居中。 */
+    /* top: 50%——向上間隔50%的高度。由於自身的高度，單純使用此屬性並不會居中。 */
     top: 50%;
-    /* transform: translateY(-50%)——向上移动自身高度的50%，与上个属性结合便可以实现垂直居中。 */
+    /* transform: translateY(-50%)——向上移動自身高度的50%，與上個屬性結合便可以實現垂直居中。 */
     transform: translateY(-50%);
-    /* z-index 属性设置元素的堆叠顺序。
-    拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。 */
+    /* z-index 屬性設置元素的堆疊順序。
+    擁有更高堆疊順序的元素總是會處於堆疊順序較低的元素的前面。 */
     z-index: -1;
 }
 
@@ -86,13 +89,13 @@ html {
 .prev,
 .next {
     /* CSS outline: none; */
-    /* 表示使outline属性无效，使绘制于元素周围的一条线无效。 */
+    /* 表示使outline屬性無效，使繪制於元素周圍的一條線無效。 */
     outline: none;
-    /* 标签元素不设置边框属性或者取消边框属性 */
-    /* 设置0浏览器依然会渲染，占用内存，设置none就不会渲染 */
+    /* 標簽元素不設置邊框屬性或者取消邊框屬性 */
+    /* 設置0瀏覽器依然會渲染，占用內存，設置none就不會渲染 */
     border: none;
-    /* display: inline-block不设置宽度时，内容撑开宽度；
-    不会独占一行，支持宽高，代码换行被解析成空格 */
+    /* display: inline-block不設置寬度時，內容撐開寬度；
+    不會獨占一行，支持寬高，代碼換行被解析成空格 */
     display: inline-block;
     background-color: var(--color--);
     padding: 8px 16px;
@@ -100,10 +103,16 @@ html {
     color: var(--font_color--);
     transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+}
+.prev{
+    margin-right: 80%;
 }
 
-/* a.active 是对class=active的a标签生效 */
-/* a:active 是对按下的a标签生效 */
+/* a.active 是對class=active的a標簽生效 */
+/* a:active 是對按下的a標簽生效 */
 .prev:active,
 .next:active {
     transform: scale(.9);
@@ -114,6 +123,7 @@ html {
     cursor: not-allowed;
     background-color: var(--color--);
     color: var(--font_color--);
+    
 }
 
 .prev.active,
