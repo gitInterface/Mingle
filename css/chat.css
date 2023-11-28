@@ -1,13 +1,19 @@
 body {
-    /* o    verflow: hidden; */
+    overflow-y: hidden;
+}
+
+.left {
+    height: 88vh;
+    overflow-y: auto;
+}
+
+.right {
+    height: 88vh;
+    overflow-y: auto;
 }
 
 .headline {
     text-align: center;
-}
-
-.main {
-    overflow-y: scroll;
 }
 
 .pic {
@@ -18,21 +24,26 @@ body {
 
 .txt {
     overflow: hidden;
+}
 
+
+.chat-name {
+    background-color: antiquewhite;
+    height: 5%;
+    vertical-align: middle;
 }
 
 .chat-container {
     border: 1px solid #ccc;
     padding: 10px;
-    height: 700px;
     overflow-y: scroll;
+    height: 85%;
 }
 
 .chat-box {
     display: flex;
     flex-direction: column;
 
-    /* scroll-behavior: smooth; */
 }
 
 .message {
@@ -50,4 +61,12 @@ body {
 .sent {
     background-color: #dcf8c6;
     align-self: flex-end;
+}
+
+.input-group {
+    height: 3%;
+}
+
+.form-control {
+    resize: none;
 }

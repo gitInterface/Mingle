@@ -89,11 +89,11 @@
 
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0">
-            <div class="row g-0 mt-4 flex-column-reverse flex-md-row">
-                <!-- pics & message -->
-                <div class="col-md-4">
+            <div class="row g-0 flex-column-reverse flex-md-row">
+                <!-- left => headline, pics message -->
+                <div class="col-md-4 left">
                     <div>
-                        <h3 class="headline mb-4">Message</h3>
+                        <h3 class="headline">Message(這邊是左側)</h3>
                     </div>
 
                     <div>
@@ -101,7 +101,7 @@
                             aria-current="true">
                             <div class="d-flex w-100 align-items-center justify-content-between">
                                 <strong class="mb-1">List group item heading</strong>
-                                <small>Wed</small>
+
                             </div>
                             <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
                                 date.</div>
@@ -109,27 +109,39 @@
                         <div class="ms-5 mb-5">
                             <img class="pic me-4" src="https://picsum.photos/50/50">
                             <strong>AAA</strong>
+                            <small>Wed</small>
                             <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
                                 harum
                             </p>
                         </div>
-                        <div class="msg ms-5 mb-5">
+                        <div class="ms-5 mb-5">
                             <img class="pic me-4" src="https://picsum.photos/50/50">
                             <strong>AAA</strong>
+                            <small>Wed</small>
                             <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
                                 harum
                             </p>
                         </div>
-                        <div class="msg ms-5 mb-5">
+                        <div class="ms-5 mb-5">
                             <img class="pic me-4" src="https://picsum.photos/50/50">
                             <strong>AAA</strong>
+                            <small>Wed</small>
                             <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
                                 harum
                             </p>
                         </div>
-                        <div class="msg ms-5 mb-5">
+                        <div class="ms-5 mb-5">
                             <img class="pic me-4" src="https://picsum.photos/50/50">
                             <strong>AAA</strong>
+                            <small>Wed</small>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <small>Wed</small>
                             <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
                                 harum
                             </p>
@@ -137,8 +149,11 @@
                     </div>
 
                 </div>
-                <!-- whole messages -->
-                <div class="col-md-8 h-60">
+                <!-- Right => chat-name, chat-box, input-group -->
+                <div class="col-md-8 right">
+                    <div class="chat-name">
+                        <strong>AAA</strong>
+                    </div>
                     <div class="chat-container">
                         <div class="chat-box">
                             <div class="message received">
@@ -192,18 +207,23 @@
                             <div class="message received">
                                 <p>Hello there!</p>
                             </div>
-
                         </div>
-
-
+                    </div>
+                    <div class="input-group">
+                        <input type="file" id="fileInput" style="display: none;">
+                        <button class="btn btn-secondary"
+                            onclick="document.getElementById('fileInput').click();">🖇</button>
+                        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                        <button class="btn btn-secondary"
+                            onclick="document.getElementById('imageInput').click();">🖼️</button>
+                        <textarea class="form-control" placeholder="在這裡輸入訊息..." rows="2"></textarea>
+                        <button class="btn btn-primary">送出</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Header End -->
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
