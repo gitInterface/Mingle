@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="zh-Hant-TW">
-    <title>Mingle message</title>
+    <title>Mingle Message</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -31,12 +31,12 @@
     <!-- Main Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Chat Stylesheet -->
+    <!-- chat -->
     <link href="css/chat.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="container-fluid bg-white p-0 vh-100">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -89,44 +89,118 @@
 
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0">
-            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+            <div class="row g-0 mt-4 flex-column-reverse flex-md-row">
+                <!-- pics & message -->
+                <div class="col-md-4">
+                    <div>
+                        <h3 class="headline mb-4">Message</h3>
+                    </div>
 
-                <div class="col-md-4 p-3">
-                    <h3 class="text-center mb-5">Message</h3>
-                    <div class="ms-3">
-                        <img class="pic me-4" src="https://picsum.photos/50/50">
-                        <div class="txt">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-                                nulla perspiciatis
-                                temporibus quidem neque quos? Similique impedit neque magnam nam.</p>
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight"
+                            aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">List group item heading</strong>
+                                <small>Wed</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                        <div class="ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="msg ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="msg ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="msg ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
                         </div>
                     </div>
-                    <div class="msg">
-                        <img class="pic" src="https://picsum.photos/50/50">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-                            nulla
-                            perspiciatis
-                            temporibus quidem neque quos? Similique impedit neque magnam nam.</p>
-                    </div>
-                    <div class="msg">
-                        <img class="pic" src="https://picsum.photos/50/50">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nulla perspiciatis
-                            temporibus quidem neque quos? Similique impedit neque magnam nam.</p>
-                    </div>
-                    <p class="animated fadeIn mb-4 pb-2">全台 26 縣市提供打工換宿</p>
-                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">如何運作</a>
-                </div>
-                <div class="col-md-8 animated fadeIn">
 
+                </div>
+                <!-- whole messages -->
+                <div class="col-md-8 h-60">
+                    <div class="chat-container">
+                        <div class="chat-box">
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Header End -->
-
-
-
-
-
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
