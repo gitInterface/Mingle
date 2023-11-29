@@ -1,0 +1,89 @@
+.login-frame{
+    margin: auto;
+}
+
+.login-form{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.login-icon{
+    border:3px solid #ffc107;
+    border-radius: 50px;
+    background-color: #ffc107;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    line-height: 55px;
+}
+
+.accountDiv{
+    text-align: center;
+}
+
+.passwordDiv{
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.account{
+    background-image: url('img/icon-account.png');
+    background-size: 23px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 7px;
+    text-indent: 25px;
+    width: 100%;
+}
+
+.password{
+    background-image: url('img/icon-key.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 7px;
+    text-indent: 25px;
+    width: 100%;
+}
+
+.checkboxDiv{
+    float:left;
+}
+
+.checkbox{
+    accent-color: #ffc107;
+}
+
+.forget-password{
+    margin-right: 0px;
+    float:right;
+}
+
+.login-btn{
+    margin: auto;
+    text-align: center;
+}
+
+.btn-warning{
+    border-radius: 50px;
+    color: white;
+}
+
+.or{
+    text-align: center;
+    margin-top: -20px;
+}
+
+.google-btn{
+    margin: auto;
+    text-align: center;
+}
+
+.btn-outline-dark{
+    border-radius: 50px;
+}

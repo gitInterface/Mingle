@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="zh-Hant-TW">
-    <title>Mingle 打工換宿平台</title>
+    <title>Mingle 打工換宿平台-打工預定</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -31,10 +31,12 @@
     <!-- Main Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Order Stylesheet -->
+    <link href="order/order4.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid bg-white p-0">
+    <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -78,45 +80,108 @@
                         <a href="404.html" class="nav-item nav-link">聯絡我們</a>
                         <a href="404.html" class="nav-item nav-link">成為提供者</a>
                     </div>
-                    <a href="404.html" class="btn btn-primary px-3 d-lg-flex" style="margin-right: 30px;">成為幫助者</a>
-                    <a href="404.html" class="btn btn-dark px-3 d-lg-flex">登入</a>
+                    <a href="404.html" class="btn btn-primary px-3 d-lg-flex">成為幫助者</a>
                 </div>
             </nav>
         </div>
         <!-- Navbar End -->
 
-        <!-- Content Start -->
-        <div class="container-fluid p-5">
-            <p style="font-weight: bold;">參加打工換宿酌收服務費300元</p>
-            <br>
-            <br>
-            <span style="font-weight: bold;">聯絡我們</span>
-            <div class="col-lg-3" style="background-color: black; border-radius: 20px; color: white;overflow: hidden; ">
-                <div class="contact-text" style="float: left;margin-left: 15px;margin-top: 10px;">
-                    <p><a href="404.html">Mingle.org@gmail.com</a></p>
-                    <p>週一~週五 14:00-22:00</p>
+
+
+
+        <!-- form start -->
+
+        <div class="container">
+            <main>
+
+
+                <!-- 訂單狀況 -->
+                <div class="py-5 text-center">
+                    <h2>訂單資訊</h2>
+                    <div class="container py-5 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-12">
+                                <div class="card card-stepper text-black" style="border-radius: 16px;">
+
+                                    <div class="card-body p-5">
+
+                                        <div class="d-flex justify-content-between align-items-center mb-5">
+                                            <div>
+                                                <h5 class="mb-0">訂單編號 <span
+                                                        class="text-primary font-weight-bold">ID1234567</span></h5>
+                                            </div>
+                                            <div class="text-end">
+                                                <p class="mb-0">預計出發日:
+                                                <p>2023/02/20</p>
+                                            </div>
+                                        </div>
+                                        <!-- 變動狀態標籤 -->
+                                        <ul id="progressbar-2"
+                                            class="d-flex justify-content-between mx-0 mt-0 mb-5 px-0 pt-0 pb-2">
+                                            <li class="step0 active text-center" id="step1"></li>
+                                            <li class="step0 active text-center" id="step2"></li>
+                                            <li class="step0 active text-center" id="step3"></li>
+                                            <li class="step0 active text-center" id="step4"></li>
+                                        </ul>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-lg-flex align-items-center">
+                                                <i class="fas fa-briefcase fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                                <div>
+                                                    <p class="fw-bold mb-1">order</p>
+                                                    <p class="fw-bold mb-0">work</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-lg-flex align-items-center">
+                                                <i class="fas fa-home fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                                <div>
+                                                    <p class="fw-bold mb-1">order</p>
+                                                    <p class="fw-bold mb-0">house</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-lg-flex align-items-center">
+                                                <i class="fas fa-clipboard-list fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                                <div>
+                                                    <p class="fw-bold mb-1">order</p>
+                                                    <p class="fw-bold mb-0">confirm</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-lg-flex align-items-center">
+                                                <i class="fas fa-envelope fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                                <div>
+                                                    <p class="fw-bold mb-1">order</p>
+                                                    <p class="fw-bold mb-0">finish</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-icon" style="float: right;margin-top: 25px;margin-right: 30px;">
-                    <a href="404.html"><img src="img/icon-fb.png" style="width: 30px;"></a>
-                    <a href="404.html"><img src="img/icon-line.png" style="width: 30px;"></a>
+                <!-- 訂單狀況 -->
+
+                <!-- start -->
+                <div class="row g-5 justify-content-center">
+                    <div class="col-8 order-md-last">
+                        <h4 class="d-flex justify-content-center mb-3">
+                            成功預定，返回首頁
+                        </h4>
+                        <!-- button start -->
+                        <a href="index.html">
+                            <button class="w-100 btn btn-primary btn-lg" type="submit">返回首頁</button></a>
+                        <!-- button end -->
+                    </div>
+
                 </div>
-            </div>
-            <br>
-            <br>
-            <span style="font-weight: bold;">意見箱</span>
-            <form>
-                <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" style="resize:none;"></textarea>
-                </div>
-                <br>
-                <div style="text-align: center;">
-                    <button type="button" class="btn btn-light" style="border: 1px solid black;">取消</button>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="404.html"><button type="button" class="btn btn-warning">送出</button></a>
-                </div>
-            </form>
+                <!-- end-->
         </div>
-        <!-- Content End -->
+
+        <!-- end -->
+        </main>
+
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
@@ -197,6 +262,7 @@
         </div>
         <!-- Footer End -->
 
+
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
@@ -211,6 +277,10 @@
 
     <!-- Main Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- order Javascript -->
+    <script src="/order/form-validation.js"></script>
+
 
 </body>
 
