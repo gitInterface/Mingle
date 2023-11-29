@@ -12,7 +12,8 @@
 //***************************************************************************************
 
 
-// initialize navbar
+
+// initialize spinner & navbar
 let nav = `
 <!-- Spinner Start -->
 <div id="spinner"
@@ -40,22 +41,21 @@ let nav = `
                 <a href="index.html" class="nav-item nav-link active">首頁</a>
                 <a href="info.html" class="nav-item nav-link">關於Mingle</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">打工機會</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">打工換宿資訊</a>
                     <div class="dropdown-menu rounded-0 m-0">
-                        <a href="404.html" class="dropdown-item">所有項目</a>
-                        <a href="404.html" class="dropdown-item">依地區篩選</a>
-                        <a href="404.html" class="dropdown-item">依類型篩選</a>
+                        <a href="404.html" class="dropdown-item">瀏覽打工項目</a>
+                        <a href="404.html" class="dropdown-item">住宿地點一覽</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">換宿資訊</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">名狗論壇</a>
                     <div class="dropdown-menu rounded-0 m-0">
-                        <a href="404.html" class="dropdown-item">業者據點</a>
-                        <a href="404.html" class="dropdown-item">推薦日誌</a>
+                        <a href="404.html" class="dropdown-item">Q&A 專區</a>
+                        <a href="404.html" class="dropdown-item">打工日誌</a>
                     </div>
                 </div>
                 <a href="404.html" class="nav-item nav-link">聯絡我們</a>
-                <a href="404.html" class="nav-item nav-link">成為提供者</a>
+                <a href="provider_form.html" class="nav-item nav-link">成為提供者</a>
             </div>
             <a href="404.html" class="btn btn-secondary px-3 d-lg-flex" style="margin-right: 30px;">成為幫助者</a>
             <a href="login.html" class="btn btn-dark px-3 d-lg-flex">登入</a>
@@ -66,9 +66,9 @@ let nav = `
 `
 document.getElementById("container").insertAdjacentHTML('afterbegin', nav);
 
-// initialize footer
+// initialize footer & back to top button
 let foot = `
-<!-- Footer Start -->
+< !--Footer Start-- >
 <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
     <div class="container py-5">
         <div class="row g-5">
@@ -145,10 +145,10 @@ let foot = `
         </div>
     </div>
 </div>
-<!-- Footer End -->
+< !--Footer End-- >
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+< !--Back to Top-- >
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 `
 document.getElementById("container").insertAdjacentHTML('beforeend', foot);
 
