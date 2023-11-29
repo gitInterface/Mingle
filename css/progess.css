@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border-box：當定義width和height時，
+    border和padding的參數值被包含在width和height之內。*/
+    box-sizing: border-box;
+}
+
+:root {
+    /* 在: root選擇器中定義自定義屬性意味著它們可以作用於全局文檔中所有元素。 */
+    --color--: #dededf;
+    --color_active--: #000000;
+    --font_color--: #ffffff;
+    --default_color--: #ffffff;
+}
+
+
+body,
+html {
+    /* 給一個元素中設置overflow: hidden，
+    那麽該元素的內容若超出了給定的寬度和高度屬性，那麽超出的部分將會被隱藏 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* 將彈性 <div>元素的所有項目的居中對齊： */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.progress-container {
+    height: calc(100% -50%);
+    width: 100%;
+    display: flex;
+    /* 均勻排列每個元素
+    首個元素放置於起點，末尾元素放置於終點 */
+    justify-content: space-between;
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    
+}
+
+.progress-container::before {
+    content: '';
+    width: 100%;
+    background-color: var(--color--);
+}
+
+.progress-container>.progress,
+.progress-container::before {
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    /* top: 50%——向上間隔50%的高度。由於自身的高度，單純使用此屬性並不會居中。 */
+    top: 50%;
+    /* transform: translateY(-50%)——向上移動自身高度的50%，與上個屬性結合便可以實現垂直居中。 */
+    transform: translateY(-50%);
+    /* z-index 屬性設置元素的堆疊順序。
+    擁有更高堆疊順序的元素總是會處於堆疊順序較低的元素的前面。 */
+    z-index: -1;
+}
+
+.progress-container>.progress {
+    background-color: var(--color_active--);
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.progress-container>.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: var(--color--);
+    width: 40px;
+    height: 40px;
+    color: var(--font_color--);
+    background-color: var(--default_color--);
+    transition: all .35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.progress-container>.circle.active {
+    border-color: var(--color_active--);
+}
+
+.prev,
+.next {
+    /* CSS outline: none; */
+    /* 表示使outline屬性無效，使繪制於元素周圍的一條線無效。 */
+    outline: none;
+    /* 標簽元素不設置邊框屬性或者取消邊框屬性 */
+    /* 設置0瀏覽器依然會渲染，占用內存，設置none就不會渲染 */
+    border: none;
+    /* display: inline-block不設置寬度時，內容撐開寬度；
+    不會獨占一行，支持寬高，代碼換行被解析成空格 */
+    display: inline-block;
+    background-color: var(--color--);
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: var(--font_color--);
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    position: fixed;
+    bottom: 5%;
+}
+.prev{
+    left: 2%;
+}
+
+.next{
+    right: 2%;
+}
+
+/* a.active 是對class=active的a標簽生效 */
+/* a:active 是對按下的a標簽生效 */
+.prev:active,
+.next:active {
+    transform: scale(.9);
+}
+
+.prev.disabled,
+.next.disabled {
+    cursor: not-allowed;
+    background-color: var(--color--);
+    color: var(--font_color--);
+    
+}
+
+.prev.active,
+.next.active {
+    background-color: var(--color_active--);
+    color: var(--default_color--);
+}
+
+.next {
+    margin-left: 15px;
+}
