@@ -32,7 +32,7 @@ input{
 }
 
 .account{
-    background-image: url('/img/icon-account.png');
+    background-image: url('img/icon-account.png');
     background-size: 23px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -42,7 +42,7 @@ input{
 }
 
 .password{
-    background-image: url('/img/icon-key.png');
+    background-image: url('img/icon-key.png');
     background-size: 20px;
     background-repeat: no-repeat;
     overflow: hidden;
