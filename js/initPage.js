@@ -14,6 +14,7 @@
 
 
 // initialize spinner & navbar
+
 let nav = `
 <!-- Spinner Start -->
 <div id="spinner"
@@ -29,7 +30,7 @@ let nav = `
     <nav class="navbar bg-primary navbar-expand-lg navbar-light py-0 px-4">
         <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
             <div class="icon p-2 me-2">
-                <img class="img-fluid" src="/img/icon-main.png" alt="Icon" style="width: 30px; height: 27px;">
+                <img class="img-fluid" src="img/icon-main.png" alt="Icon" style="width: 30px; height: 27px;">
             </div>
             <h1 class="m-0 link-secondary">Mingle 名狗</h1>
         </a>
@@ -96,22 +97,22 @@ let foot = `
                 <h5 class="text-white mb-4">活動相簿</h5>
                 <div class="row g-2 pt-2">
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="/img/property-1.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="/img/property-2.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="/img/property-3.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="/img/property-4.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="/img/property-5.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="/img/property-6.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
                     </div>
                 </div>
             </div>
