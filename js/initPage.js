@@ -1,8 +1,6 @@
 // This js file is for initializing pages with following items:
-// 1. spinner
-// 2. navbar
-// 3. footer
-// 4. back to top button
+// 1. spinner & navbar
+// 2. footer & back to top button
 //***************************************************************************************
 // How to use: 
 // 1. import this js file in your html file by following code
@@ -10,6 +8,8 @@
 // 2. remember to add the following code to your html file
 //    <div id="container" class="container-fluid bg-white p-0">/* your content */</div>
 //***************************************************************************************
+// Note: 
+// Please turn down "Format on Save" option in VSCode to avoid format error of html comments.
 
 
 
@@ -29,7 +29,7 @@ let nav = `
     <nav class="navbar bg-primary navbar-expand-lg navbar-light py-0 px-4">
         <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
             <div class="icon p-2 me-2">
-                <img class="img-fluid" src="img/icon-main.png" alt="Icon" style="width: 30px; height: 27px;">
+                <img class="img-fluid" src="/img/icon-main.png" alt="Icon" style="width: 30px; height: 27px;">
             </div>
             <h1 class="m-0 link-secondary">Mingle 名狗</h1>
         </a>
@@ -48,9 +48,9 @@ let nav = `
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">名狗論壇</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">論壇日誌</a>
                     <div class="dropdown-menu rounded-0 m-0">
-                        <a href="404.html" class="dropdown-item">Q&A 專區</a>
+                        <a href="forum.html" class="dropdown-item">討論 & 問答</a>
                         <a href="404.html" class="dropdown-item">打工日誌</a>
                     </div>
                 </div>
@@ -66,9 +66,11 @@ let nav = `
 `
 document.getElementById("container").insertAdjacentHTML('afterbegin', nav);
 
+
+
 // initialize footer & back to top button
 let foot = `
-< !--Footer Start-- >
+<!-- Footer Start -->
 <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
     <div class="container py-5">
         <div class="row g-5">
@@ -145,9 +147,9 @@ let foot = `
         </div>
     </div>
 </div>
-< !--Footer End-- >
+<!-- Footer End -->
 
-< !--Back to Top-- >
+<!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 `
 document.getElementById("container").insertAdjacentHTML('beforeend', foot);

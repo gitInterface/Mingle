@@ -230,7 +230,7 @@
 }
 
 .cat-item:hover div {
-    background: var(--primary);
+    background: lightslategray;
     border-color: transparent;
 }
 
