@@ -1,31 +1,89 @@
-.form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
+.login-frame{
     margin: auto;
 }
 
-.mb4{
+.login-form{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.login-icon{
+    border:3px solid #ffc107;
+    border-radius: 50px;
+    background-color: #ffc107;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    line-height: 55px;
+}
+
+.accountDiv{
+    text-align: center;
+}
+
+.passwordDiv{
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.account{
+    background-image: url('/img/icon-account.png');
+    background-size: 23px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 7px;
+    text-indent: 25px;
+    width: 100%;
+}
+
+.password{
+    background-image: url('/img/icon-key.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 7px;
+    text-indent: 25px;
+    width: 100%;
+}
+
+.checkboxDiv{
+    float:left;
+}
+
+.checkbox{
+    accent-color: #ffc107;
+}
+
+.forget-password{
+    margin-right: 0px;
+    float:right;
+}
+
+.login-btn{
     margin: auto;
     text-align: center;
 }
 
-.form-signin .checkbox {
-    font-weight: 400;
+.btn-warning{
+    border-radius: 50px;
+    color: white;
 }
 
-.form-signin .form-floating:focus-within {
-    z-index: 2;
+.or{
+    text-align: center;
+    margin-top: -20px;
 }
 
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+.google-btn{
+    margin: auto;
+    text-align: center;
 }
 
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.btn-outline-dark{
+    border-radius: 50px;
 }

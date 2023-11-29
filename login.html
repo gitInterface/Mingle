@@ -32,34 +32,51 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
 
-    
+
 </head>
 
 <body>
-    <main class="form-signin">
-        <form>
-            <img class="mb-4" src="/img/icon-main.png" alt="登入圖示" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <br>
 
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+    <div class="row">
+        <div class="col-lg-4 login-frame">
+            <div class="container-xxl bg-white p-5 login-form">
+                <div class="login-icon">
+                    <img src="/img/icon-main.png" width="50px">
+                </div>
+                <br>
+                <div class="accountDiv">
+                    <input type="email" class="account" name="account" placeholder="Email/電話號碼" required autofocus>
+                </div>
+                <br>
+                <br>
+                <div class="passwordDiv">
+                    <input type="password" class="password" name="password" placeholder="請輸入密碼" required>
+                </div>
+                <br>
+                <div class="reminder">
+                    <div class="checkboxDiv">
+                        <label>
+                            <input class="checkbox" type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <div class="forget-password">
+                        <a href="404.html">忘記密碼</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="login-btn">
+                    <a href="index.html"><button class="btn btn-lg btn-warning btn-block" type="submit">登入</button></a>
+                </div>
+                <br>
+                <p class="or">或</p>
+                <div class="google-btn">
+                    <a href="index.html"><button class="btn btn-outline-dark" type="submit"><img src="/img/icon-google.png" width="25px">&nbsp;透過Google帳號登入</button></a>
+                </div>
             </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-
-            <div class="checkbox mb-3">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-        </form>
-    </main>
-
+        </div>
+    </div>
 </body>
 
 </html>
