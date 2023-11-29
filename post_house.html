@@ -5,8 +5,10 @@
     <meta charset="zh-Hant-TW">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>房源發布</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/progess.css" />
     <link rel="stylesheet" href="./css/postHouse.css" />
+
 </head>
 
 <body>
@@ -23,15 +25,15 @@
                 <div class="btn-row">
                     <button type="button" class="btn" role="radio">
                         <img src="./img/icon-人力.png">
-                        <h2>人力</h2>
+                        <div class="btnFont">人力</div>
                     </button>
                     <button type="button" class="btn" role="radio">
                         <img src="./img/icon-旅店.png">
-                        <h2>旅店</h2>
+                        <div class="btnFont">旅店</div>
                     </button>
                     <button type="button" class="btn" role="radio">
                         <img src="./img/icon-活動.png">
-                        <h2>活動</h2>
+                        <div class="btnFont">活動</div>
                     </button>
                 </div>
 
@@ -39,15 +41,15 @@
                 <div class="btn-row">
                     <button type="button" class="btn" role="radio">
                         <img src="./img/icon-補教.png">
-                        <h2>補教</h2>
+                        <div class="btnFont">補教</div>
                     </button>
                     <button type="button" class="btn" role="radio">
                         <img src="./img/icon-辦公.png">
-                        <h2>辦公</h2>
+                        <div class="btnFont">辦公</div>
                     </button>
                     <button type="button" class="btn" role="radio">
                         <img src="./img/icon-其他.png">
-                        <h2>其他</h2>
+                        <div class="btnFont">其他</div>
                     </button>
                 </div>
             </div>
@@ -61,26 +63,119 @@
                 <!-- 按鈕行 -->
                 <div class="btn-row">
                     <button type="button" class="btn" role="radio">
-                        <img src="./img/icon-補教.png">
-                        <h2>補教</h2>
+                        <img src="./img/icon-獨棟房屋.png">
+                        <div class="btnFont">獨棟房屋</div>
                     </button>
                     <button type="button" class="btn" role="radio">
-                        <img src="./img/icon-辦公.png">
-                        <h2>辦公</h2>
+                        <img src="./img/icon-公寓.png">
+                        <div class="btnFont">公寓</div>
                     </button>
                     <button type="button" class="btn" role="radio">
-                        <img src="./img/icon-其他.png">
-                        <h2>其他</h2>
+                        <img src="./img/icon-房車.png">
+                        <div class="btnFont">房車</div>
                     </button>
                 </div>
+                <div class="btn-row">
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-旅店.png">
+                        <div class="btnFont">旅店</div>
+                    </button>
+                    <button type="button" class="btn" role="radio">
+                        <img src="./img/icon-木屋.png"">
+                        <div class=" btnFont">木屋
+                </div>
+                </button>
+                <button type="button" class="btn" role="radio">
+                    <img src="./img/icon-民宿.png">
+                    <div class="btnFont">民宿</div>
+                </button>
             </div>
         </div>
-        <div class="progress-container">
-
-            <div id="progress" class="progress"></div>
+    </div>
+    <!--頁面三-->
+    <div class="node">
+        <div id="section3" class="section">
+            <div class="col-md-7 col-lg-8">
+                <div class="header">
+                    <h1>房屋地址</h1>
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="col-md-5">
+                                <label for="City" class="form-label">市</label>
+                                <select class="form-select" id="City" required>
+                                    <option value="">請選擇</option>
+                                    <option>台北市</option>
+                                    <option>桃園市</option>
+                                    <option>新北市</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請重新選取
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="zip" class="form-label">郵遞區號</label>
+                                    <input type="text" class="form-control" id="zip">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="District" class="form-label">區</label>
+                            <input type="text" class="form-control" id="District">
+                        </div>
+                        <div class="col-12">
+                            <label for="address" class="form-label">地址</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="col-12">
+                            <label for="Village" class="form-label">村/里</label>
+                            <input type="text" class="form-control" id="Village">
+                        </div>
+                </form>
+            </div>
         </div>
-        <button type="button" class="prev disabled" id="prev">上一步</button>
-        <button type="button" class="next active" id="next">下一步</button>
+    </div>
+    <!-- 頁面四 -->
+    <div class="node">
+        <div id="section4" class="section">
+            <div class="header">
+                <h1>分享基本資訊</h1>
+            </div>
+            <div class="divCenter">
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <div class="col-md-5">
+                        <div class="col-12">
+                            <label for="member" class="form-label">接待人數</label>
+                            <input type="text" class="form-control" id="member">
+                        </div>
+                        <div class="col-12">
+                            <label for="bed" class="form-label">床位</label>
+                            <input type="text" class="form-control" id="bed">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="node">
+        <div id="section5" class="section">
+            <div class="header">
+                <h1>上傳房屋照片</h1>
+            </div>
+            <div class="photo">
+                <label for="Photo" class="form-label">將照片拖到此處</label>
+                <br><label>或</label>
+                <br><a href="">從你的裝置上傳</a>
+            </div>
+        </div>
+    </div>
+    <div class="progress-container">
+        <div id="progress" class="progress"></div>
+    </div>
+    <button type="button" class="prev disabled" id="prev">上一步</button>
+    <button type="button" class="next active" id="next">下一步</button>
     </div>
     <script src="./js/postHouse.js"></script>
 </body>

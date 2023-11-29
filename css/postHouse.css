@@ -12,7 +12,7 @@
     margin: 10px 10px;
     width: 15%;
     height: 100%;
-    font-size: 15px;
+    font-size: 12px;
     border: 2px solid rgb(231, 230, 230);
     background-color: transparent;
     border-radius: 10px;
@@ -26,8 +26,11 @@ img{
 
 }
 
-h2{
+.btnFont{
     margin: 0;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
 }
 
 #section1{
@@ -51,3 +54,18 @@ h1{
     margin-bottom: 40px;
 }
 
+#section3{
+    margin-left: 20%;
+}
+
+.divCenter{
+    margin-left: 580px;
+    justify-items: center;
+}
+
+.photo{
+    
+    margin: 50px 330px;
+    
+    border: 3px dotted rgb(233, 233, 233);
+}

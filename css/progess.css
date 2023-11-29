@@ -14,6 +14,7 @@
     --default_color--: #ffffff;
 }
 
+
 body,
 html {
     /* 給一個元素中設置overflow: hidden，
@@ -25,6 +26,7 @@ html {
     align-items: center;
     height: 100%;
     width: 100%;
+    background-color: #ffffff;
 }
 
 .container {
@@ -34,14 +36,16 @@ html {
 }
 
 .progress-container {
+    height: calc(100% -50%);
     width: 100%;
     display: flex;
     /* 均勻排列每個元素
     首個元素放置於起點，末尾元素放置於終點 */
     justify-content: space-between;
-    position: relative;
-    margin-top: 30%;
-    margin-bottom: 10px;
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    
 }
 
 .progress-container::before {
@@ -106,9 +110,15 @@ html {
     height: 50px;
     width: 100px;
     font-size: 15px;
+    position: fixed;
+    bottom: 5%;
 }
 .prev{
-    margin-right: 80%;
+    left: 2%;
+}
+
+.next{
+    right: 2%;
 }
 
 /* a.active 是對class=active的a標簽生效 */
