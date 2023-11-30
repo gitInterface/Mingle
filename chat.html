@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="zh-Hant-TW">
+    <title>Mingle Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- chat -->
+    <link href="css/chat.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0 vh-100">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar">
+            <nav class="navbar bg-primary navbar-expand-lg navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/icon-main.png" alt="Icon" style="width: 30px; height: 27px;">
+                    </div>
+                    <h1 class="m-0 test-pink">Mingle 名狗</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">首頁</a>
+                        <a href="404.html" class="nav-item nav-link">關於Mingle</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">打工機會</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="404.html" class="dropdown-item">所有項目</a>
+                                <a href="404.html" class="dropdown-item">依地區篩選</a>
+                                <a href="404.html" class="dropdown-item">依類型篩選</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">換宿資訊</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="404.html" class="dropdown-item">業者據點</a>
+                                <a href="404.html" class="dropdown-item">推薦日誌</a>
+                            </div>
+                        </div>
+                        <a href="404.html" class="nav-item nav-link">聯絡我們</a>
+                        <a href="404.html" class="nav-item nav-link">成為提供者</a>
+                    </div>
+                    <a href="404.html" class="btn btn-primary px-3 d-lg-flex">成為幫助者</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 flex-column-reverse flex-md-row">
+                <!-- left => headline, pics message -->
+                <div class="col-md-4 left">
+                    <div>
+                        <h3 class="headline">Message(這邊是左側)</h3>
+                    </div>
+
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight"
+                            aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">List group item heading</strong>
+
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                        <div class="ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <small>Wed</small>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <small>Wed</small>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <small>Wed</small>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <small>Wed</small>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                        <div class="ms-5 mb-5">
+                            <img class="pic me-4" src="https://picsum.photos/50/50">
+                            <strong>AAA</strong>
+                            <small>Wed</small>
+                            <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquid
+                                harum
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Right => chat-name, chat-box, input-group -->
+                <div class="col-md-8 right">
+                    <div class="chat-name">
+                        <strong>AAA</strong>
+                    </div>
+                    <div class="chat-container">
+                        <div class="chat-box">
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi! How can I help you?</p>
+                            </div>
+                            <div class="message received">
+                                <p>Hello there!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="file" id="fileInput" style="display: none;">
+                        <button class="btn btn-secondary"
+                            onclick="document.getElementById('fileInput').click();">🖇</button>
+                        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                        <button class="btn btn-secondary"
+                            onclick="document.getElementById('imageInput').click();">🖼️</button>
+                        <textarea class="form-control" placeholder="在這裡輸入訊息..." rows="2"></textarea>
+                        <button class="btn btn-primary">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
