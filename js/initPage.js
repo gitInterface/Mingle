@@ -58,7 +58,7 @@ let nav = `
                 <a href="404.html" class="nav-item nav-link">聯絡我們</a>
                 <a href="provider_form.html" class="nav-item nav-link">成為提供者</a>
             </div>
-            <a href="404.html" class="btn btn-secondary px-3 d-lg-flex" style="margin-right: 30px;">成為幫助者</a>
+            <a href="order.html" class="btn btn-secondary px-3 d-lg-flex" style="margin-right: 30px;">成為幫助者</a>
             <a href="login.html" class="btn btn-dark px-3 d-lg-flex">登入</a>
         </div>
     </nav>
