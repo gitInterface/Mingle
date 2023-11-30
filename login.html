@@ -11,72 +11,75 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Common CSS -->
+    <link href="css/common.css" rel="stylesheet">
 
     <!-- Main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <br>
-
-    <div class="row">
-        <div class="col-lg-4 login-frame">
-            <div class="container-xxl bg-white p-5 login-form">
-                <div class="login-icon">
-                    <img src="img/icon-main.png" width="50px">
-                </div>
-                <br>
-                <div class="accountDiv">
-                    <input type="email" class="account" name="account" placeholder="Email/電話號碼" required autofocus>
-                </div>
-                <br>
-                <br>
-                <div class="passwordDiv">
-                    <input type="password" class="password" name="password" placeholder="請輸入密碼" required>
-                </div>
-                <br>
-                <div class="reminder">
-                    <div class="checkboxDiv">
-                        <label>
-                            <input class="checkbox" type="checkbox" value="remember-me"> Remember me
-                        </label>
+    <div id="container" class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-4 login-frame">
+                <div class="container-xxl bg-white p-5 login-form">
+                    <div class="login-icon">
+                        <img src="img/icon-main.png" width="50px">
                     </div>
-                    <div class="forget-password">
-                        <a href="404.html">忘記密碼</a>
+                    <br>
+                    <div class="accountDiv">
+                        <input type="email" class="account" name="account" placeholder="Email/電話號碼" required autofocus>
                     </div>
-                </div>
-                <br>
-                <br>
-                <div class="login-btn">
-                    <a href="index.html"><button class="btn btn-lg btn-warning btn-block" type="submit">登入</button></a>
-                </div>
-                <br>
-                <p class="or">或</p>
-                <div class="google-btn">
-                    <a href="index.html"><button class="btn btn-outline-dark" type="submit"><img src="img/icon-google.png" width="25px">&nbsp;透過Google帳號登入</button></a>
+                    <br>
+                    <br>
+                    <div class="passwordDiv">
+                        <input type="password" class="password" name="password" placeholder="請輸入密碼" required>
+                    </div>
+                    <br>
+                    <div class="reminder">
+                        <div class="checkboxDiv">
+                            <label>
+                                <input class="checkbox" type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <div class="forget-password">
+                            <a href="404.html">忘記密碼</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="login-btn">
+                        <a href="index.html"><button class="btn btn-lg btn-warning btn-block"
+                                type="submit">登入</button></a>
+                    </div>
+                    <br>
+                    <p class="or">或</p>
+                    <div class="google-btn">
+                        <a href="index.html"><button class="btn btn-outline-dark" type="submit"><img
+                                    src="img/icon-google.png" width="25px">&nbsp;透過Google帳號登入</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- Init Javascript -->
+    <script src="js/initPage.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="/lib/wow/wow.min.js"></script>
+        <script src="/lib/easing/easing.min.js"></script>
+        <script src="/lib/waypoints/waypoints.min.js"></script>
+        <script src="/lib/owlcarousel/owl.carousel.min.js"></script> -->
+
+    <!-- Main Javascript -->
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

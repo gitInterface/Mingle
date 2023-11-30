@@ -1,6 +1,10 @@
 :root {
     --primary: #ffc107;
-    --secondary: #FF6922;
+    --secondary: #d63384;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #fd7e14;
+    --danger: #dc3545;
     --light: #EFFDF5;
     --dark: #0E2E50;
 }
@@ -100,7 +104,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
-    padding: 25px 0;
+    padding: 25px;
     color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase;
@@ -109,7 +113,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #d63384;
+    color: var(--secondary);
 }
 
 @media (max-width: 991.98px) {
@@ -226,7 +230,7 @@
 }
 
 .cat-item:hover div {
-    background: var(--primary);
+    background: lightslategray;
     border-color: transparent;
 }
 
@@ -249,45 +253,45 @@
     color: #FFFFFF;
 }
 
-.property-item {
+.list-item {
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
 }
 
-.property-item img {
+.list-item img {
     transition: .5s;
 }
 
-.property-item:hover img {
+.list-item:hover img {
     transform: scale(1.1);
 }
 
-.property-item .border-top {
+.list-item .border-top {
     border-top: 1px dashed rgba(0, 185, 142, .3) !important;
 }
 
-.property-item .border-end {
+.list-item .border-end {
     border-right: 1px dashed rgba(0, 185, 142, .3) !important;
 }
 
 
 /*** Review ***/
-.testimonial-carousel {
+.review-carousel {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
 @media (min-width: 576px) {
-    .testimonial-carousel {
+    .review-carousel {
         padding-left: 4rem;
         padding-right: 4rem;
     }
 }
 
-.testimonial-carousel .testimonial-item .border {
+.review-carousel .review-item .border {
     border: 1px dashed rgba(0, 185, 142, .3) !important;
 }
 
-.testimonial-carousel .owl-nav {
+.review-carousel .owl-nav {
     position: absolute;
     width: 100%;
     height: 40px;
@@ -298,8 +302,8 @@
     z-index: 1;
 }
 
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
+.review-carousel .owl-nav .owl-prev,
+.review-carousel .owl-nav .owl-next {
     position: relative;
     width: 40px;
     height: 40px;
@@ -313,8 +317,8 @@
     transition: .5s;
 }
 
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
+.review-carousel .owl-nav .owl-prev:hover,
+.review-carousel .owl-nav .owl-next:hover {
     background: var(--dark);
 }
 
