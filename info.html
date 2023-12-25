@@ -36,15 +36,24 @@
             <br>
             <br>
             <span style="font-weight: bold;">意見箱</span>
-            <form>
+            <form action="https://formsubmit.co/el/pexade" method="post" enctype="text/plain">
+                <label for="inputEmail">信箱</label>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <label for="inputMessage">意見</label>
                 <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" style="resize:none;"></textarea>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="10"
+                        style="resize:none;"></textarea>
                 </div>
                 <br>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <input type="hidden" name="_template" value="table">
                 <div style="text-align: center;">
                     <button type="button" class="btn btn-light" style="border: 1px solid black;">取消</button>
                     &nbsp;&nbsp;&nbsp;
-                    <a href="404.html"><button type="button" class="btn btn-warning">送出</button></a>
+                    <button type="submit" class="btn btn-warning">送出</button>
                 </div>
             </form>
         </div>
