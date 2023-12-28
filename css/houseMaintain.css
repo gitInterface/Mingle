@@ -1,0 +1,14 @@
+.tableDiv {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    overflow: scroll;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #FFD966;
+}
+
+.table td{
+    width: 100px;
+}
