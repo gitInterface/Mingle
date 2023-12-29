@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div id="container"  class="container-fluid bg-white p-0">
+    <div id="container" class="container-fluid bg-white p-0">
         <!-- Content Start -->
         <div class="container-fluid p-5">
             <ul>
@@ -38,11 +38,19 @@
             <br>
             <br>
             <span style="font-weight: bold;">意見箱</span>
-            <form action="https://formsubmit.co/363367bd126ea0fd2b58f2b247f113a5" method="post" enctype="multipart/form-data">
+            <form action="https://formsubmit.co/363367bd126ea0fd2b58f2b247f113a5" method="post"
+                enctype="multipart/form-data">
                 <label for="inputEmail">信箱</label>
                 <div class="form-group" style="margin-bottom: 10px;">
                     <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
                 </div>
+
+                <label for="formFile" class="form-label">圖片</label>
+                <div class="mb-3">
+                    <input class="form-control" type="file" id="formFile" name="file">
+                    <img id="formImg" alt="form image" style="visibility: hidden;"/>
+                </div>
+
                 <label for="inputMessage">意見</label>
                 <div class="form-group">
                     <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="10"
@@ -71,7 +79,7 @@
     <script src="js/sharedFunctions.js"></script>
 
     <!-- Page Javascript -->
-
+    <script src="js/info.js"></script>
 </body>
 
 </html>
