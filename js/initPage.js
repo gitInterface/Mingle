@@ -155,7 +155,10 @@ let foot = `
 `
 document.getElementById("container").insertAdjacentHTML('beforeend', foot);
 
-
+// let sharedFunctions = `
+// <script src="js/sharedFunctions.js"></script>
+// `
+// document.getElementById("container").insertAdjacentHTML('afterend', sharedFunctions);
 
 // old code, don't look, just in case we need it in the future
 //
