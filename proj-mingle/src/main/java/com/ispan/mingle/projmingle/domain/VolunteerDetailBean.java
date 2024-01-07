@@ -1,5 +1,7 @@
 package com.ispan.mingle.projmingle.domain;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -39,7 +41,7 @@ public class VolunteerDetailBean {
 	private String photoType;
 
 	@Column(name = "birth", columnDefinition = "datetime")
-	private String birth;
+	private Date birth;
 
 	@Column(name = "fk_country", columnDefinition = "nvarchar", length = 15)
 	private String country;
@@ -54,10 +56,10 @@ public class VolunteerDetailBean {
 	private String hobby;
 
 	@Column(name = "createdAt", columnDefinition = "datetime")
-	private String createdAt;
+	private Date createdAt;
 
 	@Column(name = "updatedAt", columnDefinition = "datetime")
-	private String updatedAt;
+	private Date updatedAt;
 
 	@Column(name = "isDeleted", columnDefinition = "bit")
 	private Character isDeleted;

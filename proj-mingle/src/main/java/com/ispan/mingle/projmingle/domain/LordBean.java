@@ -1,5 +1,7 @@
 package com.ispan.mingle.projmingle.domain;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -33,9 +35,9 @@ public class LordBean {
     private Character isPerfectLord;
 
     @Column(name = "createdAt", columnDefinition = "datetime")
-    private String createdAt;
+    private Date createdAt;
 
     @Column(name = "updatedAt", columnDefinition = "datetime")
-    private String updatedAt;
+    private Date updatedAt;
 
 }
