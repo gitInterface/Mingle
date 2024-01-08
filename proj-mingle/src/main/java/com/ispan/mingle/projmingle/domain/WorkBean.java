@@ -2,8 +2,12 @@ package com.ispan.mingle.projmingle.domain;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -11,11 +15,13 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "Work")
+@Component
 public class WorkBean {
 
     /** 打工ID */
     @Id
     @Column(name = "workID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer workid;
 
     /** 房東ID */
@@ -34,7 +40,7 @@ public class WorkBean {
     @Column(name = "status", columnDefinition = "varchar(20)")
     private String status;
 
-    /** 房東註解 */
+    /** 備註 */
     @Column(name = "notes", columnDefinition = "nvarchar(100)")
     private String notes;
 
@@ -108,10 +114,10 @@ public class WorkBean {
 
     /** 是否刪除 */
     @Column(name="isDeleted", columnDefinition = "bit")
-    private Character isDeleted;
+    private Boolean isDeleted;
     
     /** 是否可預訂 */
     @Column(name="isOnShelf", columnDefinition = "bit")
-    private Character isOnShelf;
+    private Boolean isOnShelf;
 
 }
