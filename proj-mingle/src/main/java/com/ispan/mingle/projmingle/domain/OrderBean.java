@@ -1,0 +1,89 @@
+package com.ispan.mingle.projmingle.domain;
+
+import java.util.Date;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "order")
+public class OrderBean 
+{
+    /** 訂單ID */
+    @Id
+    @Column(name = "orderID")
+    private Integer orderid;
+
+
+    /** 會員ID */
+    @Column(name = "fk_userID", columnDefinition = "varchar(100)")
+    private String userid;
+
+
+    /** 訂單狀態 */
+    @Column(name = "status", columnDefinition = "varchar(20)")
+    private String status;
+
+
+    /** 房東註解 */
+    @Column(name = "notes", columnDefinition = "nvarchar(100)")
+    private String notes;
+
+    /** 會員訂單需求備註 */
+    @Column(name = "needs", columnDefinition = "nvarchar(255)")
+    private String needs; 
+
+    /** 創建日期 */
+    @Column(name = "createdAt", columnDefinition = "datetime")
+    private Date createdAt;
+
+    /** 更新日期 */
+    @Column(name = "updatedAt", columnDefinition = "datetime")
+    private Date updatedAt;
+
+    /** 訂單報名打工人數 */
+    @Column(name = "numbers", columnDefinition = "int")
+    private Integer numbers;
+
+    /** 訂單開始日期 */
+    @Column(name = "startDate", 
+    columnDefinition = "datetime")
+    private Date startDate;
+
+    /** 訂單結束日期 */
+    @Column (name = "endDate",
+    columnDefinition = "datetime")
+    private Date endDate;
+
+    /** 是否取消 */
+    @Column (name = "isCancelled",
+    columnDefinition = "bit")
+    private Character isCancelled;
+
+    /** 是否退款*/
+    @Column (name = "isRefunded",
+    columnDefinition = "bit")
+    private Character isRefunded;
+
+    /** 是否為自己報名*/
+    @Column (name = "isUserAttend",
+    columnDefinition = "bit")
+    private Character isUserAttend;   
+
+    /** 統編 */
+    @Column (name = "businessID", columnDefinition = "varchar(10)")
+    private String businessID;
+
+    /** 發票日期 */
+    @Column (name = "invoiceDate", columnDefinition = "datetime")
+    private Date invoiceDate;
+
+    /** 發票號碼 */
+    @Column (name = "invoiceNumber", columnDefinition = "varchar(20)")
+    private String invoiceNumber;   
+
+}

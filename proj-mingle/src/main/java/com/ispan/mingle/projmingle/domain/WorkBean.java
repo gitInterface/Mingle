@@ -13,7 +13,6 @@ import lombok.Data;
 @Table(name = "Work")
 public class WorkBean {
 
-
     /** 打工ID */
     @Id
     @Column(name = "workID")
@@ -35,7 +34,7 @@ public class WorkBean {
     @Column(name = "status", columnDefinition = "varchar(20)")
     private String status;
 
-    /** 備註 */
+    /** 房東註解 */
     @Column(name = "notes", columnDefinition = "nvarchar(100)")
     private String notes;
 
