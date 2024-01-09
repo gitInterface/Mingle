@@ -2,8 +2,12 @@ package com.ispan.mingle.projmingle.domain;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -11,21 +15,22 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "Work")
+@Component
 public class WorkBean {
-
 
     /** 打工ID */
     @Id
     @Column(name = "workID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer workid;
 
     /** 房東ID */
     @Column(name = "fk_lordID", columnDefinition = "int")
-    private Integer fk_lordid;
+    private Integer lordid;
 
     /** 工作類型 */
     @Column(name = "fk_workType", columnDefinition = "nvarchar(10)")
-    private String fk_worktype;
+    private String worktype;
 
     /** 工作名稱 */
     @Column(name = "workName", columnDefinition = "nvarchar(30)")
@@ -41,7 +46,7 @@ public class WorkBean {
 
     /** 地區 */
     @Column(name = "fk_district", columnDefinition = "nvarchar(5)")
-    private String fk_district;
+    private String district;
     
     /** 工作地址 */
     @Column(name="address", columnDefinition = "nvarchar(200)")
@@ -109,10 +114,10 @@ public class WorkBean {
 
     /** 是否刪除 */
     @Column(name="isDeleted", columnDefinition = "bit")
-    private Character isDeleted;
+    private Boolean isDeleted;
     
     /** 是否可預訂 */
     @Column(name="isOnShelf", columnDefinition = "bit")
-    private Character isOnShelf;
+    private Boolean isOnShelf;
 
 }
