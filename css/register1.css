@@ -1,0 +1,71 @@
+.row{
+    margin-top: 2em;
+}
+
+.register-frame{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #d63384;
+}
+
+.register-form{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.title{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+.register-icon{
+    margin: auto;
+    text-align: center;
+}
+
+.accountDiv{
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.account{
+    background-image: url('img/icon-account.png');
+    background-size: 23px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: 7px;
+    text-indent: 25px;
+    width: 100%;
+}
+
+.register-btn{
+    margin: auto;
+    text-align: center;
+}
+
+.register-btn button{
+    background-color: #d63384;
+}
+
+.btn-dark{
+    border-radius: 50px;
+    color: white;
+}
+
+.google-btn{
+    margin: auto;
+    text-align: center;
+}
+
+.btn-outline-dark{
+    border-radius: 50px;
+}
+
