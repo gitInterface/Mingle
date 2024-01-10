@@ -32,22 +32,12 @@ input{
 }
 
 .account{
-    background-image: url('img/icon-account.png');
-    background-size: 23px;
-    background-repeat: no-repeat;
     overflow: hidden;
-    background-position: 7px;
-    text-indent: 25px;
     width: 100%;
 }
 
 .password{
-    background-image: url('img/icon-key.png');
-    background-size: 20px;
-    background-repeat: no-repeat;
     overflow: hidden;
-    background-position: 7px;
-    text-indent: 25px;
     width: 100%;
 }
 

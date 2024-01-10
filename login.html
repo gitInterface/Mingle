@@ -32,12 +32,10 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
 
-
 </head>
 
 <body>
-    <br>
-
+    
     <div class="row">
         <div class="col-lg-4 login-frame">
             <div class="container-xxl bg-white p-5 login-form">
@@ -46,18 +44,18 @@
                 </div>
                 <br>
                 <div class="accountDiv">
-                    <input type="email" class="account" name="account" placeholder="Email/電話號碼" required autofocus>
+                    <input id="account" type="email" class="account" name="account" placeholder="Email/電話號碼" required autofocus>
                 </div>
                 <br>
                 <br>
                 <div class="passwordDiv">
-                    <input type="password" class="password" name="password" placeholder="請輸入密碼" required>
+                    <input id="password" type="password" class="password" name="password" placeholder="請輸入密碼" required>
                 </div>
                 <br>
                 <div class="reminder">
                     <div class="checkboxDiv">
                         <label>
-                            <input class="checkbox" type="checkbox" value="remember-me"> Remember me
+                            <input id="checkbox" class="checkbox" type="checkbox" value="remember-me"> 顯示密碼
                         </label>
                     </div>
                     <div class="forget-password">
@@ -77,6 +75,10 @@
             </div>
         </div>
     </div>
+
+    <!-- Page Javascript -->
+    <script src="js/login.js"></script>
+
 </body>
 
 </html>
