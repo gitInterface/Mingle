@@ -2,24 +2,34 @@
     margin-top: 2em;
 }
 
-.login-frame{
+.register-frame{
     margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #d63384;
 }
 
-.login-form{
+.register-form{
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.login-icon{
-    border:3px solid #ffc107;
-    border-radius: 50px;
-    background-color: #ffc107;
-    width: 60px;
-    height: 60px;
+.title{
     text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+.register-icon{
     margin: auto;
-    line-height: 55px;
+    text-align: center;
+}
+
+.account-icon{
+    text-align: center;
+    margin-top: -10px;
 }
 
 .accountDiv{
@@ -45,32 +55,18 @@ input{
     width: 100%;
 }
 
-.checkboxDiv{
-    float:left;
-}
-
-.checkbox{
-    accent-color: #ffc107;
-}
-
-.forget-password{
-    margin-right: 0px;
-    float:right;
-}
-
-.login-btn{
+.register-btn{
     margin: auto;
     text-align: center;
 }
 
-.btn-warning{
-    border-radius: 50px;
-    color: white;
+.register-btn button{
+    background-color: #d63384;
 }
 
-.or{
-    text-align: center;
-    margin-top: -20px;
+.btn-dark{
+    border-radius: 50px;
+    color: white;
 }
 
 .google-btn{
@@ -81,3 +77,4 @@ input{
 .btn-outline-dark{
     border-radius: 50px;
 }
+
